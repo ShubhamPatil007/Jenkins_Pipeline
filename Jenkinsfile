@@ -12,21 +12,18 @@ pipeline {
 		stage('Program 1') {
 			steps {
 				echo "Program 1 running";
-				bat "Program_1.bat";
 			}
 		}
 
 		stage('Program 2') {
 			steps {
 				echo "Program 2 running";
-				bat "Program_2.bat";
 			}
 		}
 
 		stage('Program 3') {
 			steps {
 				echo "Program 3 running";
-				bat "Program_3.bat";
 			}
 		}
 	}
