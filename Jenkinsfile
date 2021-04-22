@@ -12,24 +12,24 @@ pipeline {
 		stage('Program 1') {
 			steps {
 				echo "Program 1 running";
-				g++ -o Program_1 Program_1.cpp
-				Program_1
+				bat '''g++ -o Program_1 Program_1.cpp
+					Program_1'''
 			}
 		}
 
 		stage('Program 2') {
 			steps {
 				echo "Program 2 running";
-				g++ -o Program_2 Program_2.cpp
-				Program_2
+				bat '''g++ -o Program_1 Program_1.cpp
+					Program_1'''2
 			}
 		}
 
 		stage('Program 3') {
 			steps {
 				echo "Program 3 running";
-				g++ -o Program_3 Program_3.cpp
-				Program_3
+				bat '''g++ -o Program_1 Program_1.cpp
+					Program_1'''
 			}
 		}
 	}
