@@ -20,16 +20,16 @@ pipeline {
 		stage('Program 2') {
 			steps {
 				echo "Program 2 running";
-				bat '''g++ -o Program_1 Program_1.cpp
-					Program_1'''2
+				bat '''g++ -o Program_2 Program_2.cpp
+					Program_2'''
 			}
 		}
 
 		stage('Program 3') {
 			steps {
 				echo "Program 3 running";
-				bat '''g++ -o Program_1 Program_1.cpp
-					Program_1'''
+				bat '''g++ -o Program_3 Program_3.cpp
+					Program_3'''
 			}
 		}
 	}
