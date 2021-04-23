@@ -12,6 +12,7 @@ pipeline {
 		stage('Program 1') {
 			steps {
 				echo "Program 1 running";
+				bat 'g++ -o Program_1 Program_1.cpp'
 			}
 		}
 
@@ -27,5 +28,4 @@ pipeline {
 			}
 		}
 	}
-
 }
