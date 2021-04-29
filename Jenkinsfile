@@ -6,6 +6,9 @@ pipeline {
 			steps {
 				echo "Retreiving Git repository";
 				git branch: 'main', credentialsId: 'b85d318c-dc97-485c-b2ac-8fef8b8e5ca5', url: 'https://github.com/ShubhamPatil007/Jenkins_Pipeline.git'
+				
+				def dockerHome = tool 'docker'
+       				env.PATH = "${dockerHome}/bin:${env.PATH}"
 			}
 		}
 
